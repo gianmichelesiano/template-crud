@@ -1,0 +1,5 @@
+<ul class="list-group hover">
+  <li class="list-group-item" *ngFor="let product of productlist" (click)="onItemClick(product)">
+    {{product.name}} - {{product.position}}
+  </li>
+</ul>

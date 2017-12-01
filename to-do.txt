@@ -1,0 +1,34 @@
+1) ng g c products
+cd in products
+ng g c product
+ng g c products-list
+
+2) cambiare in module con questi :
+import { ProductComponent } from './products/product/product.component';
+import { ProductListComponent } from './products/product-list/product-list.component';
+
+declaration
+    ProductComponent,
+    ProductListComponent
+
+
+3 ) aggiungere html in products.html
+
+<div style="text-align:center">
+  <h2 class="jumbotron">Products Register</h2>
+</div>
+<div class="row">
+  <div class="col-md-7">
+    <app-product></app-product>
+  </div>
+  <div class="col-md-5">
+    <app-product-list></app-product-list>
+  </div>
+</div>
+
+4) create folder shared (copy past existing):
+	-product.model.ts
+        -product.service.ts
+		
+5) run productService pythnon 
+	chande modello, classModello, listaClass
